@@ -10,7 +10,7 @@ function getter() {
         peso = Number(peso.value);
         altura = Number(altura.value);
 
-        if (isNaN(peso) & isNaN(altura)) {
+        if (isNaN(peso) && isNaN(altura)) {
             resultado.innerHTML = `<p class="erro"> Altura e Peso Invalidos </p>`
         }
         else if (isNaN(peso)) {
@@ -29,19 +29,19 @@ function getter() {
                 if (calculo < 18.5) {
                     return `Seu IMC é ${calculo}(Abaixo do peso)`
                 }
-                if (calculo >= 18.5 & calculo <= 24.9) {
+                else if (calculo >= 18.5 && calculo <= 24.9) {
                     return `Seu IMC é ${calculo}(Peso Ideal)`
                 }
-                if (calculo >= 25 & calculo <= 29.9) {
+                else if (calculo >= 25 && calculo <= 29.9) {
                     return `Seu IMC é ${calculo}(Acima do peso)`
                 }
-                if (calculo >= 30 & calculo <= 34.9) {
+                else if (calculo >= 30 && calculo <= 34.9) {
                     return `Seu IMC é ${calculo}(Obesidade 1)`
                 }
-                if (calculo >= 35 & calculo <= 39.9) {
+                else if (calculo >= 35 && calculo <= 39.9) {
                     return `Seu IMC é ${calculo}(Obesidade 2)`
                 }
-                if (calculo >= 40) {
+                else if (calculo >= 40) {
                     return `Seu IMC é ${calculo}(Obesidade 3)`
                 }
             }
